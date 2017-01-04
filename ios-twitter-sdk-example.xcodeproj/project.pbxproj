@@ -116,6 +116,7 @@
 				6ED879931E1D528800388C52 /* Resources */,
 				4C86F9B928D6FF59C94F6469 /* [CP] Embed Pods Frameworks */,
 				0D6E30B950FBD4E947E35411 /* [CP] Copy Pods Resources */,
+				6EAF02521E1D59AC00CF2D66 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -218,6 +219,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-twitter-sdk-example/Pods-ios-twitter-sdk-example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6EAF02521E1D59AC00CF2D66 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" <FABRIC_API_KEY> <BUILD_SECRET>\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -389,6 +403,7 @@
 				6ED879AE1E1D528800388C52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
